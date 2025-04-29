@@ -11,6 +11,12 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST") {
     }else{
         $isbn = $_POST["isbn"];
     }
+
+    // if(empty($_POST["isbn"])) {
+    //     $isbnErr = "ISBN is required";
+    // }else{
+    //     $isbn = $_POST["isbn"];
+    // }
     
     if(empty($_POST["title"])) {
         $titleErr = "Title is required";
